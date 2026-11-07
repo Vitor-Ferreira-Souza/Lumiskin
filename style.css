@@ -838,6 +838,14 @@ main { overflow-x: hidden; }
     grid-template-columns: 1fr;
   }
 
+  .about-copy {
+    order: 1;
+  }
+
+  .about-visual {
+    order: 2;
+  }
+
   .hero-visual { min-height: 500px; }
   .hero-copy h1 { font-size: clamp(4rem, 15vw, 7.5rem); }
   .contact-channels { max-width: 100%; }
