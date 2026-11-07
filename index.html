@@ -139,7 +139,7 @@
           </div>
 
           <div class="about-copy">
-            <p class="eyebrow eyebrow-dark">Sobre nós</p>
+            <p class="eyebrow eyebrow-dark about-label">Sobre nós</p>
             <h2>Mais que beleza, um cuidado consciente</h2>
             <p>
               A Lumiskin nasceu para levar a beleza natural ao cotidiano, com uma proposta simples:
@@ -194,12 +194,34 @@
       <section id="fale-conosco" class="section contact">
         <div class="container contact-grid">
           <div class="contact-copy">
-            <p class="eyebrow eyebrow-dark">Fale conosco</p>
+            <p class="eyebrow eyebrow-dark contact-label">Fale conosco</p>
             <h2>Quer saber mais sobre os produtos?</h2>
             <p>
               Entre em contato para conhecer a linha Lumiskin, tirar dúvidas sobre ingredientes,
               pedidos e combinações ideais para sua rotina.
             </p>
+
+            <div class="contact-channels">
+              <div class="contact-channel">
+                <span class="contact-channel-icon" aria-hidden="true">
+                  <img src="assets/icone_whatsapp.png" alt="" />
+                </span>
+                <div class="contact-channel-copy">
+                  <strong>WhatsApp</strong>
+                  <span>00 00000-0000</span>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <span class="contact-channel-icon" aria-hidden="true">
+                  <img src="assets/icone_instagram.png" alt="" />
+                </span>
+                <div class="contact-channel-copy">
+                  <strong>Instagram</strong>
+                  <span>@lumiskin.oficial</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <form class="contact-form">
@@ -210,6 +232,16 @@
             <label>
               E-mail
               <input type="email" placeholder="seu@email.com" />
+            </label>
+            <label>
+              Motivo do contato
+              <select required>
+                <option value="" selected disabled>Selecione um motivo</option>
+                <option value="duvida">Quero tirar uma dúvida</option>
+                <option value="sabonete">Comprar sabonete - R$ 21,78</option>
+                <option value="esfoliante">Comprar esfoliante - R$ 63,30</option>
+                <option value="kit">Comprar kit - R$ 76,00</option>
+              </select>
             </label>
             <label>
               Mensagem
@@ -223,7 +255,7 @@
 
     <footer class="footer">
       <div class="container footer-row">
-        <p>© 2026 Lumiskin</p>
+        <p>Lumiskin</p>
         <p>Beleza natural para uma pele viva</p>
       </div>
     </footer>

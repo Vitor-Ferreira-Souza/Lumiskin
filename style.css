@@ -93,22 +93,26 @@ main { overflow-x: hidden; }
 }
 
 #nome_marca {
-  margin-top: 16px;
+  margin: 0;
+  line-height: 1;
+  align-self: center;
 }
 
 #logo {
-  margin: 0;
-  width: clamp(52px, 4vw, 82px);
+  margin: 0 0 -4px;
+  width: clamp(64px, 5vw, 96px);
   height: auto;
   flex-shrink: 0;
 }
 
 .brand-mark {
   display: inline-block;
-  width: clamp(52px, 4vw, 82px);
+  width: clamp(64px, 5vw, 96px);
   height: auto;
   object-fit: contain;
   flex-shrink: 0;
+  align-self: center;
+  transform: translateY(-2px);
   filter: drop-shadow(0 2px 4px rgba(52, 77, 57, 0.12));
 }
 
@@ -232,6 +236,12 @@ main { overflow-x: hidden; }
   text-transform: uppercase;
   font-weight: 700;
 
+}
+
+.about-copy .about-label,
+.contact-copy .contact-label,
+.eyebrow.eyebrow-dark {
+  color: var(--green);
 }
 
 .hero-copy h1 {
@@ -535,6 +545,7 @@ main { overflow-x: hidden; }
   font-size: clamp(2.9rem, 4vw, 5rem);
   line-height: 0.9;
   letter-spacing: -0.04em;
+  color: var(--text);
 }
 
 .about-copy p {
@@ -571,7 +582,7 @@ main { overflow-x: hidden; }
   padding: 58px 30px 28px;
   border-radius: 36px;
   box-shadow: var(--shadow);
-  background: linear-gradient(180deg, rgba(216, 205, 238, 0.96), rgba(209,197,236,0.9));
+  background: #d2c1ec;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -579,7 +590,7 @@ main { overflow-x: hidden; }
 }
 
 .price-card.highlight {
-  background: linear-gradient(180deg, rgba(239, 204, 214, 0.96), rgba(236,199,204,0.92));
+  background: #fadcef;
 }
 
 .price-card h3 {
@@ -624,7 +635,7 @@ main { overflow-x: hidden; }
   padding: 0 22px;
   border-radius: 999px;
   font-size: 0.95rem;
-  background: rgb(203, 83, 203);
+  background: rgb(188, 113, 188);
   color: white;
   box-shadow: 0 12px 22px rgba(111, 91, 145, 0.18);
 }
@@ -652,6 +663,7 @@ main { overflow-x: hidden; }
   font-size: clamp(3rem, 4.4vw, 6rem);
   line-height: 0.9;
   letter-spacing: -0.05em;
+  color: var(--text);
 }
 
 .contact-copy p {
@@ -661,14 +673,71 @@ main { overflow-x: hidden; }
   line-height: 1.9;
 }
 
+.contact-channels {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.contact-channel {
+  min-width: 0;
+  min-height: 88px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #42413f82;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.contact-channel-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border-radius: 50%;
+  background: var(--green);
+  display: grid;
+  place-items: center;
+}
+
+.contact-channel-icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.contact-channel-copy {
+  min-width: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.contact-channel-copy strong {
+  color: var(--green-4);
+  font-size: 0.82rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-channel-copy span {
+  color: var(--text);
+  font-size: 0.78rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 .contact-form {
   display: grid;
   gap: 18px;
   padding: 26px 22px 24px;
   border-radius: 34px;
   background: rgba(255,255,255,0.18);
-  border: 1px solid rgba(42,29,33,0.09);
-  box-shadow: var(--shadow);
+  border: 2px solid #42413f82;
+  box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.421);
 }
 
 .contact-form label {
@@ -714,7 +783,7 @@ main { overflow-x: hidden; }
 }
 
 .footer {
-  padding: 12px 0 44px;
+  padding: 10px 0 22px;
 }
 
 .footer-row {
@@ -771,6 +840,7 @@ main { overflow-x: hidden; }
 
   .hero-visual { min-height: 500px; }
   .hero-copy h1 { font-size: clamp(4rem, 15vw, 7.5rem); }
+  .contact-channels { max-width: 100%; }
   .contact-form .btn { align-self: stretch; }
 }
 
@@ -841,6 +911,10 @@ main { overflow-x: hidden; }
 }
 
 @media (max-width: 420px) {
+  .contact-channels {
+    grid-template-columns: 1fr;
+  }
+
   .container {
     width: min(100%, calc(100% - 18px));
   }
