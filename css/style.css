@@ -202,7 +202,7 @@ main { overflow-x: hidden; }
   min-height: clamp(520px, 52vw, 760px);
   background:
     linear-gradient(90deg, rgba(244, 239, 233, 0.96) 0%, rgba(244, 239, 233, 0.82) 23%, rgba(244, 239, 233, 0.46) 42%, rgba(244, 239, 233, 0.12) 64%, rgba(244, 239, 233, 0) 100%),
-    url("/assets/Luminskin inicio do site.png") center center / cover no-repeat;
+    url("../assets/Luminskin inicio do site.png") center center / cover no-repeat;
   overflow: hidden;
 }
 
