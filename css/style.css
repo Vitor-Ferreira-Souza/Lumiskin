@@ -1,5 +1,5 @@
 :root {
-  --bg: #f4efe9;
+  --bg: #ffffff;
   --bg-2: #efe9dd;
   --surface: #f5f2ef;
   --surface-strong: #efe6d8;
@@ -31,7 +31,7 @@ body {
   color: var(--text);
   font-family: "Inter", sans-serif;
   /* background-color: #d2b4bd; */
-  background-color: #fcfcfc;
+  background-color: #ffffff;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -44,10 +44,9 @@ main { overflow-x: hidden; }
   margin: 0 auto;
 }
 
-.section { padding: 95px 0; }
-
-.recipe {
-  padding-bottom: 35px;
+.section {
+  padding: 95px 0;
+  background-color: #ffffff;
 }
 
 .about {
@@ -58,8 +57,9 @@ main { overflow-x: hidden; }
   position: sticky;
   top: 0;
   z-index: 999;
-  background: rgba(244, 239, 233, 0.96);
+  background: rgba(244, 239, 233, 1);
   border-bottom: 1px solid rgba(42, 29, 33, 0.05);
+  box-shadow: 0px 3px 40px 0px rgba(0, 0, 0, 0.304);
 }
 
 .header-shell {
@@ -202,7 +202,7 @@ main { overflow-x: hidden; }
   min-height: clamp(520px, 52vw, 760px);
   background:
     linear-gradient(90deg, rgba(244, 239, 233, 0.96) 0%, rgba(244, 239, 233, 0.82) 23%, rgba(244, 239, 233, 0.46) 42%, rgba(244, 239, 233, 0.12) 64%, rgba(244, 239, 233, 0) 100%),
-    url("assets/Luminskin inicio do site.png") center center / cover no-repeat;
+    url("/assets/Luminskin inicio do site.png") center center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -390,132 +390,8 @@ main { overflow-x: hidden; }
   transform: scale(1.08);
 }
 
-.recipe-header {
-  text-align: center;
-  margin-bottom: 52px;
-}
-
-.recipe-header h2 {
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(3rem, 4vw, 5rem);
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-  color: var(--text);
-}
-
-.recipe-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 36px;
-  align-items: center;
-}
-
-.info-card {
-  padding: 28px 26px 24px;
-  border-radius: 38px;
-  box-shadow: var(--shadow);
-  min-height: 300px;
-  background: rgba(255,255,255,0.14);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.soft-purple { background: linear-gradient(180deg, rgba(216, 205, 238, 0.96), rgba(197,185,225,0.92)); }
-.soft-peach { background: linear-gradient(180deg, rgba(240, 220, 210, 0.95), rgba(232, 193, 176, 0.9)); }
-.soft-green { background: linear-gradient(180deg, rgba(208, 227, 199, 0.95), rgba(184, 210, 170, 0.9)); }
-
-.mini-illustration {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  border: 1px solid rgba(35, 62, 41, 0.08);
-  background: rgba(255,255,255,0.08);
-}
-
-.flower::before {
-  content: "";
-  position: absolute;
-  inset: 20px;
-  background: radial-gradient(circle, #f7f0d7 0 17%, transparent 18%),
-    radial-gradient(circle at 35% 35%, #f7f0d7 0 16%, transparent 17%),
-    radial-gradient(circle at 65% 35%, #f7f0d7 0 16%, transparent 17%),
-    radial-gradient(circle at 50% 50%, #f4e7a0 0 10%, transparent 11%);
-  border-radius: 50%;
-}
-
-.spoon::before,
-.spoon::after {
-  content: "";
-  position: absolute;
-}
-
-.spoon::before {
-  width: 52%;
-  height: 18%;
-  left: 25%;
-  top: 46%;
-  background: linear-gradient(90deg, #c39f7b, #f0e7d6);
-  border-radius: 999px;
-  transform: rotate(28deg);
-}
-
-.spoon::after {
-  width: 16%;
-  height: 38%;
-  left: 36%;
-  top: 22%;
-  background: linear-gradient(180deg, #d0ab75, #8d6b44);
-  border-radius: 999px;
-  transform: rotate(30deg);
-}
-
-.leaf-badge::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  width: 58%;
-  height: 58%;
-  transform: translateX(-50%) rotate(18deg);
-  background: linear-gradient(135deg, rgba(132, 177, 80, 0.96), rgba(87,126,64,0.95));
-  border-radius: 62% 0 60% 0;
-}
-
-.leaf-badge::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  width: 28%;
-  height: 36%;
-  transform: translateX(-50%);
-  background: rgba(255,255,255,0.2);
-  border-radius: 50px;
-}
-
-.info-card h3 {
-  margin: 0 0 10px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2.1rem, 2.5vw, 3rem);
-  line-height: 1;
-  color: var(--text);
-}
-
-.info-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 1.06rem;
-  line-height: 1.7;
-}
-
 .about {
-  background: rgba(255,255,255,0.18);
+  background: #ffffff;
 }
 
 .about-grid {
@@ -587,6 +463,11 @@ main { overflow-x: hidden; }
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  transition: transform 0.62s ease, box-shadow 0.22s ease;
+}
+
+.price-card:hover {
+  transform: scale(1.1);
 }
 
 .price-card.highlight {
@@ -642,6 +523,7 @@ main { overflow-x: hidden; }
 
 .card-order-button:hover,
 .card-order-button:focus-visible {
+  transform: none;
   background: white;
   color: purple;
 }
@@ -740,12 +622,17 @@ main { overflow-x: hidden; }
   box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.421);
 }
 
-.contact-form label {
+.contact-form label,
+.contact-field {
   display: grid;
   gap: 8px;
   font-size: 0.95rem;
   color: var(--text);
   font-weight: 600;
+}
+
+.contact-field-label {
+  display: block;
 }
 
 .contact-form input,
@@ -760,6 +647,104 @@ main { overflow-x: hidden; }
   color: var(--text);
   resize: vertical;
   font-size: 1rem;
+}
+
+.reason-picker {
+  position: relative;
+}
+
+.contact-form .reason-native-select {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  min-height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+  background: transparent;
+}
+
+.reason-picker-trigger {
+  width: 100%;
+  min-height: 56px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid rgba(42,29,33,0.1);
+  border-radius: 18px;
+  background: #fff;
+  color: var(--text);
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.reason-picker-trigger:focus-visible {
+  outline: 2px solid rgba(60, 122, 72, 0.35);
+  outline-offset: 2px;
+}
+
+.reason-picker-trigger[aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+.reason-picker-arrow {
+  width: 9px;
+  height: 9px;
+  flex: 0 0 9px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.18s ease;
+}
+
+.reason-picker-trigger[aria-expanded="true"] .reason-picker-arrow {
+  transform: rotate(225deg) translate(-2px, -1px);
+}
+
+.reason-options {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  right: 0;
+  left: 0;
+  max-height: 240px;
+  padding: 6px;
+  overflow-y: auto;
+  border: 1px solid rgba(42,29,33,0.14);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.reason-options[hidden] {
+  display: none;
+}
+
+.reason-option {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--text);
+  text-align: left;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.reason-option:hover,
+.reason-option:focus-visible,
+.reason-option[aria-selected="true"] {
+  background: var(--lavender);
+  outline: none;
 }
 
 .contact-form textarea {
@@ -830,10 +815,8 @@ main { overflow-x: hidden; }
     width: min(620px, 100%);
   }
 
-  .hero-grid,
   .about-grid,
   .contact-grid,
-  .recipe-grid,
   .pricing-grid {
     grid-template-columns: 1fr;
   }
@@ -846,7 +829,6 @@ main { overflow-x: hidden; }
     order: 2;
   }
 
-  .hero-visual { min-height: 500px; }
   .hero-copy h1 { font-size: clamp(4rem, 15vw, 7.5rem); }
   .contact-channels { max-width: 100%; }
   .contact-form .btn { align-self: stretch; }
@@ -904,8 +886,7 @@ main { overflow-x: hidden; }
 
   .hero-actions .btn,
   .btn-small,
-  .btn-primary,
-  .btn-secondary {
+  .btn-primary {
     width: 100%;
   }
 

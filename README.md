@@ -18,7 +18,6 @@ Este projeto foi desenvolvido com HTML, CSS e JavaScript, com auxílio da inteli
 - Design responsivo para diferentes tamanhos de tela
 - Cabeçalho fixo com navegação por seções
 - Destaque visual de produtos
-- Apresentação dos ingredientes da receita
 - Seção institucional sobre a empresa fictícia
 - Cards de produtos com preços e botões de pedido
 - Menu de navegação atualizado de acordo com a seção exibida

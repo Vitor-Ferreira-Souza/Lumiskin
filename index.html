@@ -15,14 +15,14 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container header-shell">
         <nav class="nav" aria-label="Navegação principal">
           <a href="#inicio" class="brand" aria-label="Início do site">
-            <img class="brand-mark" src="assets/Logo Lumiskin.png" alt="Logo Lumiskin" aria-hidden="true" id="logo"/>
+            <img class="brand-mark" src="assets/Logo Lumiskin.png" alt="" id="logo" />
             <span id="nome_marca">Lumiskin</span>
           </a>
 
@@ -33,7 +33,6 @@
           <div class="nav-links">
             <a href="#inicio" class="active">Inicio</a>
             <a href="#produtos">Produtos</a>
-            <a href="#receita">Receita</a>
             <a href="#sobre-nos">Sobre nós</a>
             <a href="#comprar">Comprar</a>
             <a href="#fale-conosco">Fale conosco</a>
@@ -73,7 +72,7 @@
                 <span>Limpeza suave</span>
                 <h3>Sabonete natural</h3>
                 <p>Limpa delicadamente e ajuda a manter a pele macia, fresca e equilibrada.</p>
-                <a href="#receita" class="menu-button">VER RECEITA</a>
+                <a href="#" class="menu-button">MAIS</a>
               </div>
               <img
                 class="featured-product-image"
@@ -87,7 +86,7 @@
                 <span>Renovação da pele</span>
                 <h3>Esfoliante suave</h3>
                 <p>Remove impurezas e estimula uma sensação de pele renovada, hidratada e luminosa.</p>
-                <a href="#receita" class="menu-button">VER RECEITA</a>
+                <a href="#" class="menu-button">MAIS</a>
               </div>
               <img
                 class="featured-product-image"
@@ -99,41 +98,12 @@
         </div>
       </section>
 
-      <section id="receita" class="section recipe">
-        <div class="container">
-          <div class="section-header">
-            <p class="eyebrow eyebrow-dark">Nossa receita</p>
-            <h2>Ingredientes que respeitam a sua pele</h2>
-          </div>
-
-          <div class="recipe-grid">
-            <article class="info-card soft-purple">
-              <div class="mini-illustration flower"></div>
-              <h3>Flores e ervas</h3>
-              <p>Com a suavidade da camomila e outros elementos naturais para um cuidado delicado.</p>
-            </article>
-
-            <article class="info-card soft-peach">
-              <div class="mini-illustration spoon"></div>
-              <h3>Sabonete natural</h3>
-              <p>Fórmula que limpa sem ressecar, com textura cremosa e sensação leve.</p>
-            </article>
-
-            <article class="info-card soft-green">
-              <div class="mini-illustration leaf-badge"></div>
-              <h3>Hidratação real</h3>
-              <p>Ajuda a manter a pele macia, equilibrada, bonita e confortável ao longo do dia.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section id="sobre-nos" class="section about">
         <div class="container about-grid">
-          <div class="about-visual" aria-hidden="true">
+          <div class="about-visual">
             <img
               class="about-logo"
-              src="assets/Sobre nós lumiskin.jpg"
+              src="assets/sobre_nos_lumiskin.png"
               alt="Sobre a Lumiskin"
             />
           </div>
@@ -233,16 +203,35 @@
               E-mail
               <input type="email" placeholder="seu@email.com" />
             </label>
-            <label>
-              Motivo do contato
-              <select required>
-                <option value="" selected disabled>Selecione um motivo</option>
-                <option value="duvida">Quero tirar uma dúvida</option>
-                <option value="sabonete">Comprar sabonete - R$ 21,78</option>
-                <option value="esfoliante">Comprar esfoliante - R$ 63,30</option>
-                <option value="kit">Comprar kit - R$ 76,00</option>
-              </select>
-            </label>
+            <div class="contact-field">
+              <span class="contact-field-label" id="contact-reason-label">Motivo do contato</span>
+              <div class="reason-picker" data-reason-picker>
+                <select class="reason-native-select" name="motivo" required tabindex="-1" aria-hidden="true">
+                  <option value="" selected disabled>Selecione um motivo</option>
+                  <option value="duvida">Quero tirar uma dúvida</option>
+                  <option value="sabonete">Comprar sabonete - R$ 21,68</option>
+                  <option value="esfoliante">Comprar esfoliante - R$ 63,30</option>
+                  <option value="kit">Comprar kit - R$ 76,00</option>
+                </select>
+                <button
+                  class="reason-picker-trigger"
+                  type="button"
+                  aria-labelledby="contact-reason-label contact-reason-value"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-controls="contact-reason-options"
+                >
+                  <span id="contact-reason-value" data-reason-label>Selecione um motivo</span>
+                  <span class="reason-picker-arrow" aria-hidden="true"></span>
+                </button>
+                <div class="reason-options" id="contact-reason-options" role="listbox" aria-labelledby="contact-reason-label" hidden>
+                  <div class="reason-option" role="option" tabindex="-1" data-value="duvida" aria-selected="false">Quero tirar uma dúvida</div>
+                  <div class="reason-option" role="option" tabindex="-1" data-value="sabonete" aria-selected="false">Comprar sabonete - R$ 21,68</div>
+                  <div class="reason-option" role="option" tabindex="-1" data-value="esfoliante" aria-selected="false">Comprar esfoliante - R$ 63,30</div>
+                  <div class="reason-option" role="option" tabindex="-1" data-value="kit" aria-selected="false">Comprar kit - R$ 76,00</div>
+                </div>
+              </div>
+            </div>
             <label>
               Mensagem
               <textarea rows="4" placeholder="Escreva sua mensagem..."></textarea>
@@ -260,38 +249,6 @@
       </div>
     </footer>
 
-    <script>
-      const navLinks = [...document.querySelectorAll(".nav-links a")];
-      const observedSections = [...new Set(
-        navLinks
-          .map((link) => link.getAttribute("href"))
-          .filter((href) => href && href.startsWith("#"))
-          .map((href) => document.querySelector(href))
-          .filter(Boolean)
-      )];
-
-      function updateActiveNavigation() {
-        const headerHeight = document.querySelector(".topbar")?.offsetHeight || 0;
-        const activationLine = headerHeight + window.innerHeight * 0.28;
-        let currentSection = observedSections[0];
-
-        observedSections.forEach((section) => {
-          if (section.getBoundingClientRect().top <= activationLine) {
-            currentSection = section;
-          }
-        });
-
-        navLinks.forEach((link) => {
-          link.classList.toggle(
-            "active",
-            link.getAttribute("href") === `#${currentSection.id}`
-          );
-        });
-      }
-
-      window.addEventListener("scroll", updateActiveNavigation, { passive: true });
-      window.addEventListener("resize", updateActiveNavigation);
-      updateActiveNavigation();
-    </script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
