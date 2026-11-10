@@ -31,6 +31,12 @@ window.addEventListener("scroll", updateActiveNavigation, { passive: true });
 window.addEventListener("resize", updateActiveNavigation);
 updateActiveNavigation();
 
+document.querySelectorAll(".contact-form").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+    });
+});
+
 document.querySelectorAll("[data-reason-picker]").forEach((picker) => {
     const select = picker.querySelector(".reason-native-select");
     const trigger = picker.querySelector(".reason-picker-trigger");
