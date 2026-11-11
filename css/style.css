@@ -202,7 +202,7 @@ main { overflow-x: hidden; }
   min-height: clamp(520px, 52vw, 760px);
   background:
     linear-gradient(90deg, rgba(244, 239, 233, 0.96) 0%, rgba(244, 239, 233, 0.82) 23%, rgba(244, 239, 233, 0.46) 42%, rgba(244, 239, 233, 0.12) 64%, rgba(244, 239, 233, 0) 100%),
-    url("../assets/Luminskin inicio do site.png") center center / cover no-repeat;
+    url("../assets/lumiskin_inicio.jpeg") center center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -374,6 +374,16 @@ main { overflow-x: hidden; }
   transform: scale(1.03);
 }
 
+.featured-product-lavender .featured-product-image {
+  object-position: 40% center;
+  transform: scale(1.3);
+}
+
+.featured-product-peach .featured-product-image {
+  object-position: 75% center;
+  transform: scale(1.12);
+}
+
 .featured-product-image {
   position: absolute;
   top: 0;
@@ -387,7 +397,11 @@ main { overflow-x: hidden; }
 }
 
 .featured-product-card:hover .featured-product-image {
-  transform: scale(1.08);
+  transform: scale(1.38);
+}
+
+.featured-product-peach:hover .featured-product-image {
+  transform: scale(1.2);
 }
 
 .about {
