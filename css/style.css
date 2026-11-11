@@ -876,6 +876,10 @@ main { overflow-x: hidden; }
     font-size: 2.5rem;
   }
 
+  .about-visual {
+    display: none;
+  }
+
   .nav-links {
     gap: 12px 18px;
     font-size: 0.8rem;
@@ -884,9 +888,16 @@ main { overflow-x: hidden; }
   .hero {
     min-height: 460px;
     background:
-      linear-gradient(180deg, rgba(244, 239, 233, 0) 0%, rgba(244, 239, 233, 0.18) 38%, rgba(244, 239, 233, 0.96) 58%, #f4efe9 100%),
+      linear-gradient(180deg, transparent 48%, rgba(244, 239, 233, 0.18) 72%, rgba(244, 239, 233, 0.58) 100%),
       url("../assets/lumiskin_inicio.jpeg") 75% center / cover no-repeat;
-    background-color: #f4efe9;
+  }
+
+  .featured-product-lavender .featured-product-image {
+    object-position: 45% center;
+  }
+
+  .featured-product-peach .featured-product-image {
+    object-position: 60% center;
   }
 
   .hero-inner {
