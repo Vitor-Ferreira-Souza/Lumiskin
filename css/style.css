@@ -345,35 +345,6 @@ main { overflow-x: hidden; }
   line-height: 1.7;
 }
 
-.menu-button {
-  width: fit-content;
-  min-width: 160px;
-  min-height: 48px;
-  margin-top: auto;
-  align-self: center;
-  padding: 13px 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--green);
-  border-radius: 999px;
-  background: #fff;
-  color: var(--green);
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
-}
-
-.menu-button:hover,
-.menu-button:focus-visible {
-  background: var(--green);
-  color: #fff;
-  transform: scale(1.03);
-}
-
 .featured-product-lavender .featured-product-image {
   object-position: 40% center;
   transform: scale(1.3);
@@ -515,8 +486,8 @@ main { overflow-x: hidden; }
 .kit-combo {
   margin: 18px auto 0;
   max-width: 220px;
-  color: var(--muted);
-  font-size: 1.05rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 
