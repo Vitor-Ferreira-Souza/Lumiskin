@@ -37,6 +37,26 @@ document.querySelectorAll(".contact-form").forEach((form) => {
     });
 });
 
+document.querySelectorAll(".featured-product-toggle").forEach((button) => {
+    const card = button.closest(".featured-product-card");
+    const details = card.querySelector(".featured-product-details");
+
+    button.addEventListener("click", () => {
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        details.style.maxHeight = isExpanded ? "0px" : `${details.scrollHeight}px`;
+        card.classList.toggle("is-expanded", !isExpanded);
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        button.textContent = isExpanded ? "MAIS" : "MENOS";
+        details.setAttribute("aria-hidden", String(isExpanded));
+    });
+});
+
+window.addEventListener("resize", () => {
+    document.querySelectorAll(".featured-product-card.is-expanded .featured-product-details").forEach((details) => {
+        details.style.maxHeight = `${details.scrollHeight}px`;
+    });
+});
+
 document.querySelectorAll("[data-reason-picker]").forEach((picker) => {
     const select = picker.querySelector(".reason-native-select");
     const trigger = picker.querySelector(".reason-picker-trigger");
