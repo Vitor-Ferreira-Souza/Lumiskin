@@ -942,9 +942,9 @@ main { overflow-x: hidden; }
 
   .btn-small {
     width: auto;
-    min-width: 110px;
+    min-width: 80px;
     margin-top: 0;
-    padding: 0.6rem 1rem;
+    padding: 0.45rem 0.55rem;
     font-size: 0.75rem;
   }
 
@@ -1067,8 +1067,8 @@ main { overflow-x: hidden; }
   }
 
   .btn-small {
-    min-width: 96px;
-    padding: 0.55rem 0.7rem;
+    min-width: 70px;
+    padding: 0.4rem 0.45rem;
   }
 
   .nav-links {
