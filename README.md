@@ -11,7 +11,7 @@ Lumiskin é um site institucional e comercial responsivo para uma empresa fictí
 
 O projeto apresenta os produtos, ingredientes, informações sobre a marca, opções de compra e canais de contato em uma experiência visual pensada para desktop, tablet e dispositivos móveis.
 
-Este projeto foi desenvolvido com HTML, CSS e JavaScript, com auxílio da inteligência artificial GitHub Copilot. Para fins de estudo/prática.
+Este projeto foi desenvolvido como trabalho acadêmico do curso Técnico em Administração integrado ao Ensino Médio do Senac São Miguel Paulista. A proposta era criar uma empresa fictícia, desenvolver um produto e apresentar o projeto por meio de um site. O desenvolvimento foi feito com HTML, CSS e JavaScript, com auxílio da inteligência artificial GitHub Copilot.
 
 ## Funcionalidades
 
@@ -34,7 +34,7 @@ Este projeto foi desenvolvido com HTML, CSS e JavaScript, com auxílio da inteli
 
 ## Observações
 
-- Lumiskin é uma marca fictícia criada para fins de demonstração e estudos.
+- Lumiskin é uma marca fictícia criada para fins de demonstração e estudos. 
 - Os produtos, preços, contatos e informações exibidos são ilustrativos.
 - O formulário não está conectado a um serviço de envio por e-mail ou API.
 - Para uso comercial, será necessário substituir os contatos e dados por informações reais.
@@ -46,4 +46,3 @@ Projeto desenvolvido por **Vitor Ferreira de Souza**, com auxílio de **GitHub C
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
-
